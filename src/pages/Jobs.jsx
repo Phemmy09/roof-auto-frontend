@@ -18,7 +18,7 @@ export default function Jobs() {
   const load = () => {
     setLoading(true)
     getJobs()
-      .then(setJobs)
+      .then(data => setJobs(Array.isArray(data) ? data : []))
       .catch(console.error)
       .finally(() => setLoading(false))
   }
