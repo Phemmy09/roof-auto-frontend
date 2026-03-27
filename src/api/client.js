@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE = 'https://roof-auto-backend.onrender.com/api'
+const BASE = '/api'
 
 const api = axios.create({ baseURL: BASE })
 
